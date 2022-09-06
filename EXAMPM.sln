@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamPM02", "ExamPM02\ExamPM02.csproj", "{2E91E79F-7C3B-4891-8D8A-8F960E399FCB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "diagram", "diagram", "{34A190A0-D400-4005-8D31-3024F986ED02}"
+	ProjectSection(SolutionItems) = preProject
+		\\main\RDP\41П\ЗахаровСД\Desktop\diagram.pdf = \\main\RDP\41П\ЗахаровСД\Desktop\diagram.pdf
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
