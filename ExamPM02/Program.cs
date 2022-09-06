@@ -152,19 +152,19 @@ namespace pm02
         
         {
             
-            Console.Write("Введите сумму вклада: ");
+            Console.Write("Введите сумму вклада");
             double cash = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Количество лет: ");
+            Console.Write("Количество лет");
             int years = Convert.ToInt32(Console.ReadLine());
             double procent = getProcent(cash);
-            Console.WriteLine("Первоначальный вклад: {0:f2} руб.", Math.Round(cash, 2));
-            Console.WriteLine("Процент: {0:0}%", procent * 100);
+            Console.WriteLine("Первоначальный вклад {0:f2}", Math.Round(cash, 2));
+            Console.WriteLine("Процент {0:0}", procent * 100);
            
             if (years % 10 == 1)
            
             {
                
-                Console.WriteLine("Сумма на счету через {0} год: {1} руб.", years, getMoney(cash, procent, years));
+                Console.WriteLine("Сумма на счету через {0} год {1}", years, getMoney(cash, procent, years));
           
             }
            
@@ -172,7 +172,7 @@ namespace pm02
            
             {
                
-                Console.WriteLine("Сумма на счету через {0} года: {1} руб.", years, getMoney(cash, procent, years));
+                Console.WriteLine("Сумма на счету через {0} года {1} ", years, getMoney(cash, procent, years));
            
             }
            
@@ -180,11 +180,11 @@ namespace pm02
            
             {
                 
-                Console.WriteLine("Сумма на счету через {0} лет: {1} руб.", years, getMoney(cash, procent, years));
+                Console.WriteLine("Сумма на счету через {0} лет {1}", years, getMoney(cash, procent, years));
            
             }
            
-            Console.WriteLine("Для получения максимального дохода через 1 год необходимо вложить следующую сумму: {0:f2} руб.", getMax());
+            Console.WriteLine("Для получения максимального дохода через 1 год необходимо вложить следующую сумму {0:f2}", getMax());
        
         }
   
